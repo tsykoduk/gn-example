@@ -1,8 +1,8 @@
 {
-  "name": "Heroku Data Warehouse Demo",
-  "description": "A super basic PH app to showcase Heroku Pipelines.",
-  "website": "https://github.com/tsykoduk/TD-to-PG-to-SFDC",
-  "repository": "https://github.com/tsykoduk/TD-to-PG-to-SFDC",
+  "name": "_Hello_World",
+  "description": "A super basic PHP app to showcase Heroku Pipelines.",
+  "website": "https://github.com/tsykoduk/gn-example",
+  "repository": "https://github.com/tsykoduk/gn-example",
   "logo": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg",
   "env": {},
   "addons": ["papertrail"]
