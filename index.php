@@ -1,4 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<style media="screen" type="text/css">
+	background-color: purple;
+</style>
+
 <html>
 	<head>
 		<title>Hello World</title>
