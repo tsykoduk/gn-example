@@ -15,7 +15,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~7.0.0RC2"
+        "php": "^7.2"
     },
     "platform-dev": []
 }
