@@ -7,9 +7,9 @@
 		<h1>Hello World - Cool Feature PURLPLE</h1>
 		<a href="php-info.php" id="" title="php-info">php-info</a>
 		<?php 
-			$sec = ""; 
-			$sec = random_int ( 1 , 15 );
-			sleep ( $sec /10 );
+			$usec = ""; 
+			$usec = random_int ( 50000 , 1600000 );
+			usleep ( $usec );
 		?>
 	</body>
 </html>
