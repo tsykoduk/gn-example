@@ -5,8 +5,8 @@
 		<?php 
 			$usec = ""; 
 			$usec = random_int ( 400000 , 1600000 );
-			echo $usec;
 			usleep ( $usec );
+			echo $usec;
 		?>
 	</head>
 	<body>
