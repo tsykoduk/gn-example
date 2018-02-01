@@ -7,6 +7,7 @@
 			$usec = random_int ( 10000 , 100000 );
 			usleep ( $usec );
 			echo $usec;
+			$leaker[] = [$usec];
 		?>
 	</head>
 	<body>
