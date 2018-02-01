@@ -4,7 +4,7 @@
 		<title>Hello World</title>
 		<?php 
 			$usec = ""; 
-			$usec = random_int ( 10000 , 1000000 );
+			$usec = random_int ( 1000 , 100000 );
 			usleep ( $usec );
 			echo $usec;
 		?>
