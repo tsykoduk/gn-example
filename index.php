@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 	<head>
-		<title>Hello World</title>
+		<title>Hello World!</title>
 		<?php 
 			$usec = ""; 
 			$usec = random_int ( 10000 , 100000 );
