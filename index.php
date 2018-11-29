@@ -4,7 +4,7 @@
 		<title>Hello World!</title>
 		<?php 
 			$usec = ""; 
-			$usec = random_int ( 10000 , 100000 );
+			$usec = random_int ( 10000 , 1000000 );
 			usleep ( $usec );
 			echo $usec;
 			$leaker[] = [$usec];
