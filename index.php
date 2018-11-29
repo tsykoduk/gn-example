@@ -7,7 +7,7 @@
 			$tsec = "";
 			$rsec = "";
 			$multsec = "";
-			global $leaker;
+			global $leaker[];
 			$usec = random_int ( 10000 , 100000 );
 			$tsec = random_int ( 1000 , 200000 );
 			$multsec = random_int ( 1, 10 );
