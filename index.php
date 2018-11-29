@@ -11,8 +11,16 @@
 			$tsec = random_int ( 100 , 100000 );
 			$multsec = random_int ( 1, 10 );
 			$rsec = $usec + $tsec;
-			if ( $multsec == 10 ) {
-				$rsec = $rsec * 5;
+			switch ($multsec) {
+   			case 8:
+				$rsec = $rsec * 3;
+				break;
+			case 9:
+    				$rsec = $rsec * 6;
+				break;
+			case 10:
+				$rsec = $rsec * 12;
+				break;
 			}
 			usleep ( $rsec );
 			for ($x = 0; $x <= 100; $x++) {
