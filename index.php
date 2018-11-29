@@ -3,15 +3,16 @@
 	<head>
 		<title>Hello World!</title>
 		<?php 
+			$GLOBAL[leaker];
 			$usec = "";
 			$tsec = "";
 			$rsec = "";
 			$multsec = "";
 			$usec = random_int ( 10000 , 100000 );
-			$tsec = random_int ( 1000 , 200000 );
+			$tsec = random_int ( 100 , 100000 );
 			$multsec = random_int ( 1, 10 );
 			$rsec = $usec + $tsec;
-			if ( $multsec > 9 ) {
+			if ( $multsec == 10 ) {
 				$rsec = $rsec * 5;
 			}
 			usleep ( $rsec );
