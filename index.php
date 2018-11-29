@@ -3,7 +3,7 @@
 	<head>
 		<title>Hello World!</title>
 		<?php 
-			$GLOBAL[leaker];
+			$GLOBALS[leaker];
 			$usec = "";
 			$tsec = "";
 			$rsec = "";
@@ -17,9 +17,9 @@
 			}
 			usleep ( $rsec );
 			for ($x = 0; $x <= 100; $x++) {
-    				$GLOBAL[leaker][] = $rsec;
+    				$GLOBALS[leaker][] = $rsec;
 			}
-			error_log("rsec pause length : " . $rsec . " leaker array count : " . count($GLOBAL[leaker]) , 0);
+			error_log("rsec pause length : " . $rsec . " leaker array count : " . count($GLOBALS[leaker]) , 0);
 		?>
 	</head>
 	<body>
