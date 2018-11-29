@@ -3,11 +3,17 @@
 	<head>
 		<title>Hello World!</title>
 		<?php 
-			$usec = ""; 
-			$usec = random_int ( 10000 , 1000000 );
-			usleep ( $usec );
-			echo $usec;
-			$leaker[] = [$usec];
+			$usec = "";
+			$tsec = "";
+			$rsec = "";
+			$usec = random_int ( 10000 , 100000 );
+			$tsec = random_int ( 1000 , 500000 );
+			$rsec = $usec + $tsec;
+			usleep ( $rsec );
+			echo $rsec;
+			for ($x = 0; $x <= 100; $x++) {
+    				$leaker[] = [$rsec];
+			}
 		?>
 	</head>
 	<body>
