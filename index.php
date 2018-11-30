@@ -7,11 +7,12 @@
 			$tsec = "";
 			$rsec = "";
 			$multsec = "";
-			$usec = random_int ( 10000 , 100000 );
-			$tsec = random_int ( 100 , 100000 );
+			$usec = random_int ( 1000 , 50000 );
+			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 10 );
 			$rsec = $usec + $tsec;
 			switch ($multsec) {
+			case 0
    			case 8:
 				$rsec = $rsec * 3;
 				break;
