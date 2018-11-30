@@ -12,7 +12,6 @@
 			$multsec = random_int ( 1, 10 );
 			$rsec = $usec + $tsec;
 			switch ($multsec) {
-			case 0
    			case 8:
 				$rsec = $rsec * 3;
 				break;
