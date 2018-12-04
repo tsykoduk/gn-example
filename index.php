@@ -14,12 +14,15 @@
 			switch ($multsec) {
    			case 8:
 				$rsec = $rsec * 3;
+				error_log("multiplier : 3" , 0);
 				break;
 			case 9:
     				$rsec = $rsec * 6;
+				error_log("multiplier : 6" , 0);
 				break;
 			case 10:
 				$rsec = $rsec * 12;
+				error_log("multiplier : 12" , 0);
 				break;
 			}
 			usleep ( $rsec );
