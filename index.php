@@ -7,7 +7,7 @@
 			$tsec = "";
 			$rsec = "";
 			$multsec = "";
-			$leaker[] = "100";
+			$leaker[] = "start";
 			$usec = random_int ( 1000 , 50000 );
 			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 100 );
@@ -28,7 +28,8 @@
 			$rsec = ($usec + $tsec) * ($msec +1);
 			usleep ( $rsec );
 			for ($x = 0; $x <= $rsec; $x++) {
-				global $leaker[] = $rsec;
+				global $leaker;
+				$leaker[] = $rsec;
 			}
 			error_log("rsec pause length:" . $rsec . ", Mult:" . $msec . " leaker array count:" . count($leaker) , 0);
 		?>
