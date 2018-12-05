@@ -11,8 +11,12 @@
 			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 100 );
 			switch ($multsec) {
-   			case $multsec > 95:
+   			case $multsec > 99:
 				$msec = 19;
+				#error_log("multiplier : 11" , 0);
+				break;
+   			case $multsec > 95:
+				$msec = 9;
 				#error_log("multiplier : 11" , 0);
 				break;
 			case $multsec > 90 :  
