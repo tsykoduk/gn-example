@@ -13,19 +13,15 @@
 			switch ($multsec) {
    			case $multsec > 99:
 				$msec = 19;
-				#error_log("multiplier : 11" , 0);
 				break;
    			case $multsec > 95:
 				$msec = 9;
-				#error_log("multiplier : 11" , 0);
 				break;
 			case $multsec > 90 :  
     				$msec = 5;
-				#error_log("multiplier : 5" , 0);
 				break;
 			case $multsec > 80 :
 				$msec = 2;
-				#error_log("multiplier : 2" , 0);
 				break;
 			}
 			$rsec = ($usec + $tsec) * ($msec +1);
