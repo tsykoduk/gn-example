@@ -27,7 +27,7 @@
 			}
 			$rsec = ($usec + $tsec) * ($msec +1);
 			usleep ( $rsec );
-			for ($x = 0; $x <= $rsec; $x++) {
+			for ($x = 0; $x <= 1000; $x++) {
 				global $leaker;
 				$leaker[] = $rsec;
 			}
