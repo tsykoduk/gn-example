@@ -28,7 +28,7 @@
 			$rsec = ($usec + $tsec) * ($msec +1);
 			usleep ( $rsec );
 			for ($x = 0; $x <= $rsec; $x++) {
-				$leaker[] = "1";
+				$leaker[] = $rsec;
 			}
 			error_log("rsec pause length:" . $rsec . ", Mult:" . $msec, 0) #" leaker array count : " . count($leaker) , 0);
 		?>
