@@ -9,27 +9,27 @@
 			$multsec = "";
 			$usec = random_int ( 1000 , 50000 );
 			$tsec = random_int ( 10 , 50000 );
-			$multsec = random_int ( 1, 10 );
-			$rsec = $usec + $tsec;
+			$multsec = random_int ( 1, 100 );
 			switch ($multsec) {
-   			case 8:
-				$rsec = $rsec * 3;
-				error_log("multiplier : 3" , 0);
+   			case > 85 :
+				$msec = 2;
+				error_log("multiplier : 2" , 0);
 				break;
-			case 9:
-    				$rsec = $rsec * 6;
-				error_log("multiplier : 6" , 0);
+			case > 95 :
+    				$msec = 5;
+				error_log("multiplier : 5" , 0);
 				break;
-			case 10:
-				$rsec = $rsec * 12;
-				error_log("multiplier : 12" , 0);
+			case > 99:
+				$msec = 11;
+				error_log("multiplier : 11" , 0);
 				break;
 			}
+			$rsec = ($usec + $tsec) * ($msec +1);
 			usleep ( $rsec );
-			for ($x = 0; $x <= 100; $x++) {
-				$leaker[] = $rsec;
-			}
-			error_log("rsec pause length : " . $rsec . " leaker array count : " . count($leaker) , 0);
+			#for ($x = 0; $x <= 100; $x++) {
+			#	$leaker[] = $rsec;
+			#}
+			error_log("rsec pause length : " . $rsec, 0) #" leaker array count : " . count($leaker) , 0);
 		?>
 	</head>
 	<body>
