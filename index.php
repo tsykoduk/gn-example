@@ -29,7 +29,7 @@
 			#for ($x = 0; $x <= 100; $x++) {
 			#	$leaker[] = $rsec;
 			#}
-			error_log("rsec pause length : " . $rsec . "Mult : " . $msec, 0) #" leaker array count : " . count($leaker) , 0);
+			error_log("rsec pause length:" . $rsec . ", Mult:" . $msec, 0) #" leaker array count : " . count($leaker) , 0);
 		?>
 	</head>
 	<body>
