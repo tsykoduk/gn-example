@@ -34,7 +34,7 @@
 				global $leaker;
 				$leaker[] = $rsec;
 			}
-			error_log("rsec pause length:" . $rsec . ", Mult:" . $msec . " leaker array count:" . count($leaker) , 0);
+			error_log("rsec pause length:" . $rsec . " Class of Request:" . $multsec . ", Mult:" . $msec , 0); #. " leaker array count:" . count($leaker) , 0);
 		?>
 	</head>
 	<body>
