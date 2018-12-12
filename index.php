@@ -10,18 +10,21 @@
 			$leaker[] = "start";
 			$usec = random_int ( 1000 , 50000 );
 			$tsec = random_int ( 10 , 50000 );
-			$multsec = random_int ( 1, 100 );
+			$multsec = random_int ( 1, 1000 );
 			switch ($multsec) {
-   			case $multsec > 99:
+			case $multsec > 999 :
+				$msec = 100;
+				break;	
+   			case $multsec > 990 :
 				$msec = 19;
 				break;
-   			case $multsec > 95:
+   			case $multsec > 950 :
 				$msec = 9;
 				break;
-			case $multsec > 90 :  
+			case $multsec > 900 :  
     				$msec = 5;
 				break;
-			case $multsec > 80 :
+			case $multsec > 800 :
 				$msec = 2;
 				break;
 			}
