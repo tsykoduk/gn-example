@@ -15,7 +15,7 @@
 			$asec = mt_rand(0, 250);
 			$bsec = mt_rand(0, 250);
 			$csec = mt_rand(0, 250);
-			$dsec = mt_rand(0, 250);
+			$dsec = mt_rand(250, 250);
 			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 1000 );
 			switch ($multsec) {
@@ -35,7 +35,7 @@
 				$msec = 5;
 				break;
 			}
-			$rsec = ($asec + $bsec + $csec + 250) * ($msec + 1);
+			$rsec = ($asec + $bsec + $csec + $dsec) * ($msec + 1);
 			usleep ( $rsec );
 			for ($x = 0; $x <= 1000; $x++) {
 				global $leaker;
