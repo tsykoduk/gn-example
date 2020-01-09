@@ -6,6 +6,7 @@
 			$usec = "";
 			$tsec = "";
 			$rsec = "";
+			$msec = 0;
 			$multsec = "";
 			$leaker[] = "start";
 			$usec = random_int ( 1000 , 50000 );
@@ -22,7 +23,7 @@
 				$msec = 9;
 				break;
 			case $multsec > 900 :  
-    				$msec = 5;
+    			$msec = 5;
 				break;
 			case $multsec > 800 :
 				$msec = 2;
