@@ -35,7 +35,7 @@
 				$msec = 2;
 				break;
 			}
-			$rsec = ($asec + $bsec + $csec + $dsec) * ($msec + 1);
+			$rsec = ($asec + $bsec + $csec + 250) * ($msec + 1);
 			usleep ( $rsec );
 			for ($x = 0; $x <= 1000; $x++) {
 				global $leaker;
