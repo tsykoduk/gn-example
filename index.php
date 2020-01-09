@@ -3,13 +3,19 @@
 	<head>
 		<title>Hello World!</title>
 		<?php 
-			$usec = "";
-			$tsec = "";
+			$asec = "";
+			$bsec = "";
+			$csec = "";
+			$dsec = "";
 			$rsec = "";
 			$msec = 0;
 			$multsec = "";
 			$leaker[] = "start";
-			$usec = random_int ( 1000 , 50000 );
+			$asec = mt_rand(0, 250);
+			$asec = mt_rand(0, 250);
+			$bsec = mt_rand(0, 250);
+			$csec = mt_rand(0, 250);
+			$dsec = mt_rand(0, 250);
 			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 1000 );
 			switch ($multsec) {
@@ -29,7 +35,7 @@
 				$msec = 2;
 				break;
 			}
-			$rsec = ($usec + $tsec) * ($msec +1);
+			$rsec = ($asec + $bsec + $csec + $dsec) * ($msec + 1);
 			usleep ( $rsec );
 			for ($x = 0; $x <= 1000; $x++) {
 				global $leaker;
