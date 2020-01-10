@@ -23,13 +23,13 @@
 				$msec = 29;
 				break;	
    			case $multsec > 990 :
-				$msec = 19;
+				$msec = 12;
 				break;
    			case $multsec > 800 :
-				$msec = 9;
+				$msec = 4;
 				break;
 			case $multsec > 700 :  
-    			$msec = 5;
+    			$msec = 2;
 				break;
 			case $multsec > 500 :
 				$msec = 1;
