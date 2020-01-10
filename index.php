@@ -11,11 +11,11 @@
 			$msec = 0;
 			$multsec = "";
 			$leaker[] = "start";
-			$asec = mt_rand(0, 250);
-			$asec = mt_rand(0, 250);
-			$bsec = mt_rand(0, 250);
-			$csec = mt_rand(0, 250);
-			$dsec = mt_rand(250, 250);
+			$asec = mt_rand(0, 250000);
+			$asec = mt_rand(0, 250000);
+			$bsec = mt_rand(0, 250000);
+			$csec = mt_rand(0, 250000);
+			$dsec = mt_rand(250000, 250000);
 			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 1000 );
 			switch ($multsec) {
