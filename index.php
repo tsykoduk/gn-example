@@ -19,7 +19,7 @@
 			$tsec = random_int ( 10 , 50000 );
 			$multsec = random_int ( 1, 1000 );
 			switch ($multsec) {
-			case $multsec > 990 :
+			case $multsec > 999 :
 				$msec = 29;
 				break;	
    			case $multsec > 990 :
