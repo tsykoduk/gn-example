@@ -26,13 +26,13 @@
 				$msec = 12;
 				break;
    			case $multsec > 950 :
-				$msec = 4;
+				$msec = 2;
 				break;
 			case $multsec > 900 :  
-    			$msec = 2;
+    			$msec = 1;
 				break;
 			case $multsec > 700 :
-				$msec = 0.5;
+				$msec = 0;
 				break;
 			}
 			$rsec = ($asec + $bsec + $csec + $dsec) * ($msec + 1);
